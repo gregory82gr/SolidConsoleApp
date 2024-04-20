@@ -8,9 +8,9 @@ namespace DepedencyInversionPrinciple
 {
     public class DataAccessFactory
     {
-        public static EmployeeDataAccess GetEmployeeDataAccessObj()
+        public static EmployeeDataAccessLogic GetEmployeeDataAccessObj()
         {
-            return new EmployeeDataAccess();
+            return new EmployeeDataAccessLogic();
         }
     }
 }

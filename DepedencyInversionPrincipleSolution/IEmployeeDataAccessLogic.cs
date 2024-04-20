@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DepedencyInversionPrincipleSolution
 {
-    public interface IEmployeeDataAccess
+    public interface IEmployeeDataAccessLogic
     {
         Employee GetEmployeeDetails(int id);
     }

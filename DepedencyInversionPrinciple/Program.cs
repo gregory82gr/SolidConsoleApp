@@ -6,9 +6,9 @@ namespace DepedencyInversionPrinciple
     {
         static void Main(string[] args)
         {
-            var ebl = new EmployeeBusinessLogic();
-            var ed = ebl.GetEmployeeDetails(1);
-            Console.WriteLine(ed.Name);
+            var employeeBusinessLogic = new EmployeeBusinessLogic();
+            var employee = employeeBusinessLogic.GetEmployeeDetails(1001);
+            Console.WriteLine($"ID: {employee.ID}, Name: {employee.Name}, Department: {employee.Department}, Salary: {employee.Salary}");
             Console.ReadLine();
         }
     }

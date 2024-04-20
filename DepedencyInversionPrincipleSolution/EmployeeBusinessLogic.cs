@@ -8,14 +8,14 @@ namespace DepedencyInversionPrincipleSolution
 {
     public class EmployeeBusinessLogic
     {
-        IEmployeeDataAccess _EmployeeDataAccess;
+        IEmployeeDataAccessLogic _EmployeeDataAccessLogic;
         public EmployeeBusinessLogic()
         {
-            _EmployeeDataAccess = DataAccessFactory.GetEmployeeDataAccessObj();
+            _EmployeeDataAccessLogic = DataAccessFactory.GetEmployeeDataAccessObj();
         }
         public Employee GetEmployeeDetails(int id)
         {
-            return _EmployeeDataAccess.GetEmployeeDetails(id);
+            return _EmployeeDataAccessLogic.GetEmployeeDetails(id);
         }
     }
 }

@@ -3,3 +3,17 @@ high-level modules/classes should not depend on low-level modules/classes.
 Both should depend upon abstractions. 
 Secondly, abstractions should not depend upon details. 
 Details should depend upon abstractions.
+
+Explanation:
+The EmployeeBusinessLogic class depends on the EmployeeDataAccessLogic class, so here, 
+the EmployeeBusinessLogic class is the high-level.
+The EmployeeDataAccessLogic class is the low-level module.
+So, as per the first rule of the Dependency Inversion Principle , 
+the EmployeeBusinessLogic class/module should not depend on the concrete EmployeeDataAccessLogic
+class/module. Instead, both classes should depend on abstraction
+
+in Solution we have the following:
+High-Level module (EmployeeBusinessLogic) and Low-Level module (EmployeeDataAccessLogic) 
+depend on abstraction (IEmployeeDataAccessLogic). 
+Also, abstraction (IEmployeeDataAccessLogic) does not depend on details (EmployeeDataAccessLogic),
+but details depend on abstraction.
