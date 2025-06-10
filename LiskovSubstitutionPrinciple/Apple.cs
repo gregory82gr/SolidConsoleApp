@@ -8,7 +8,7 @@ namespace LiskovSubstitutionPrinciple
 {
     internal class Apple
     {
-        public virtual string GetColor()
+        public  string GetColor()
         {
             return "Red";
         }

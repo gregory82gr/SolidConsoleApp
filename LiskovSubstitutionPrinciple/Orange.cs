@@ -8,7 +8,7 @@ namespace LiskovSubstitutionPrinciple
 {
     internal class Orange:Apple
     {
-        public override string GetColor()
+        public string GetColor()
         {
             return "Orange";
         }
